@@ -1,0 +1,28 @@
+Type: Compendium
+Package: OSSSG Demonstration
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: 
+    person(given = "First",
+           family = "Last",
+           role = c("aut", "cre"),
+           email = "first.last@example.com")
+Description: Short demo of reproducible science
+    possibilites
+License: What license it uses
+Depends: 
+    bookdown,
+    dplyr,
+    english,
+    ggplot2,
+    holepunch,
+    jsonlite,
+    kableExtra,
+    knitr,
+    renv,
+    rmarkdown,
+    tibble
+Remotes: 
+    karthik/holepunch
+Encoding: UTF-8
+LazyData: true
