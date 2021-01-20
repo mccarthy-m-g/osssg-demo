@@ -52,7 +52,7 @@ jobs:
           R -e 'tinytex::install_tinytex()'
 
       - name: Build site
-        run: Rscript -e 'rmarkdown::render("demonstration.Rmd", output_format = "html_document", output_file = "index.html", output_dir = "www", quiet = TRUE)'
+        run: Rscript -e 'rmarkdown::render("demonstration.Rmd", output_format = "html_document", output_file = "index.html", output_dir = "_site", quiet = TRUE)'
 
       - name: Install npm
         uses: actions/setup-node@v1
@@ -64,4 +64,4 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: |
           npm install netlify-cli -g
-          netlify deploy --prod --dir www
+          netlify deploy --prod --dir _site
