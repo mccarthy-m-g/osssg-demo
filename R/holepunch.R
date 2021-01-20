@@ -6,14 +6,12 @@ write_compendium_description(
   )
 
 # write dockerfile
-write_dockerfile(maintainer = "Michael_McCarthy", r_date = "2019-02-29")
-# To write a Dockerfile. It will automatically pick the date of the last
-# modified file, match it to that version of R and add it here. You can
-# override this by passing r_date to some arbitrary date
-# (but one for which a R version exists).
+write_dockerfile(maintainer = "Michael_McCarthy",
+                 r_date = "2019-06-03", # date for R v3.6.0 (version this demo is using)
+                 branch = "main")
 
 # generates a badge for readme
-generate_badge()
+generate_badge(branch = "main")
 
 # ----------------------------------------------
 # At this time push the code to GitHub
