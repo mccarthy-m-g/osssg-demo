@@ -7,6 +7,6 @@ USER ${NB_USER}
 
 
 
-RUN wget https://github.com/mccarthy-m-g/osssg-demo/raw/main/DESCRIPTION && R -e "options(repos = list(CRAN = 'http://mran.revolutionanalytics.com/snapshot/2019-06-03/')); devtools::install_deps()"
+RUN wget https://github.com/mccarthy-m-g/osssg-demo/raw/main/DESCRIPTION && R -e "renv::restore()"
 
 RUN rm DESCRIPTION.1; exit 0
