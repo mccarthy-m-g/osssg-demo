@@ -7,7 +7,7 @@ write_compendium_description(
 
 # write dockerfile
 write_dockerfile(maintainer = "Michael_McCarthy",
-                 r_date = "2019-06-03", # date for R v3.6.0 (version this demo is using)
+                 r_date = "2021-02-20", # date for R v4.0.3 (version this demo is using)
                  branch = "main")
 
 # generates a badge for readme
